@@ -79,7 +79,7 @@ Before you begin, ensure you have the following installed:
 
 ## Backend API
 
-The backend API provides the necessary CRUD operations. Ensure the backend server is running, and you can access the API documentation at [http://localhost:3001/api-docs](http://localhost:3001/api-docs).
+The backend API provides the necessary CRUD operations. Ensure the backend server is running.
 
 ## Technologies Used
 
