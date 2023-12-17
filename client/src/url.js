@@ -1,5 +1,5 @@
-// const baseUrl = "http://localhost:3001";
-const baseUrl = "https://calender-management-server.onrender.com";
+const baseUrl = "http://localhost:3001";
+// const baseUrl = "https://calender-management-server.onrender.com";
 
 export const API_URLS = {
   LOGIN: `${baseUrl}/auth/login`,
