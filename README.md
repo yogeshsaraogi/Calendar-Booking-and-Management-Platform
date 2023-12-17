@@ -24,7 +24,6 @@ Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (v14 or later)
 - [npm](https://www.npmjs.com/)
-- [ClickHouse DB](https://clickhouse.tech/)
 
 ## Installation
 
@@ -54,7 +53,7 @@ Before you begin, ensure you have the following installed:
 
 ## Running the Application
 
-1. Start the ClickHouse DB. Ensure it's configured and running.
+1. ClickHouse DB is already configured and running on my server.
 
 2. Start the backend server:
 
