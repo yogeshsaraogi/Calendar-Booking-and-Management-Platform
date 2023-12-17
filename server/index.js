@@ -1,12 +1,24 @@
-// index.js
 const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const Routes = require("./src/routes/Routes");
+const apiRoute = require("./src/routes/apiRoutes");
+
+const errorHandler = (err, req, res, next) => {
+  res.status(500).send("Internal Server Error");
+};
+
 const app = express();
 const port = 3001;
 
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
-});
+app.use(express.json());
+app.use(cors());
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+app.use(bodyParser.json());
+
+app.use("/auth", Routes);
+app.use("/api", apiRoute);
+
+app.use(errorHandler);
+
+app.listen(port, () => console.log("Server Running..."));
