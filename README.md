@@ -11,8 +11,8 @@ Welcome to the Calendar Booking Management System! This project allows users to 
 - [Usage](#usage)
 - [Backend API](#backend-api)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+- [Admin Access](#admin-access)
+- [USER ACCESS](#user-access)
 
 ## Getting Started
 
