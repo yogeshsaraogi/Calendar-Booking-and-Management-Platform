@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
 2. Navigate to the project directory:
 
    ```bash
-   cd calendar-booking-management
+   cd Calendar-Booking-and-Management-Platform
    ```
 
 3. Install dependencies for the frontend and backend:
@@ -47,7 +47,7 @@ Before you begin, ensure you have the following installed:
    npm install
 
    # Install dependencies for the backend (Node.js/Express)
-   cd ../backend
+   cd ../server
    npm install
    ```
 
@@ -58,7 +58,7 @@ Before you begin, ensure you have the following installed:
 2. Start the backend server:
 
    ```bash
-   cd backend
+   cd server
    nodemon index.js
    ```
 
