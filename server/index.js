@@ -9,7 +9,7 @@ const errorHandler = (err, req, res, next) => {
 };
 
 const app = express();
-const port = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(cors());
@@ -21,4 +21,4 @@ app.use("/api", apiRoute);
 
 app.use(errorHandler);
 
-app.listen(port, () => console.log("Server Running..."));
+app.listen(PORT, () => console.log("Server Running..."));
