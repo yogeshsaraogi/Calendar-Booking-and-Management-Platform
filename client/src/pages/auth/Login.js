@@ -33,16 +33,18 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setErrors(validation(values));
-    await new Promise((resolve) => setTimeout(resolve, 0));
     if (!errors.username && !errors.password) {
       axios
         .post(API_URLS.LOGIN, values)
         .then((res) => {
           if (res.data.status === "Success") {
-            localStorage.setItem("token", res.data.token);
-            localStorage.setItem("user", JSON.stringify(res.data.user));
-            setAuthToken(res.data.token);
-            login(res.data.user);
+            setTimeout(() => {
+              localStorage.setItem("token", res.data.token);
+              localStorage.setItem("user", JSON.stringify(res.data.user));
+              setAuthToken(res.data.token);
+              login(res.data.user);
+            }, 0);
+
             values.isAdmin ? navigate("/admin") : navigate("/user");
           } else {
             alert("No record existed");
